@@ -33,6 +33,9 @@
               <li><a class="dropbtn" href="panel.php">Panel</a></li>
             @endif
             <li><a class="dropbtn" href="{{ route('faqs') }}">FAQs</a></li>
+            <li><a class="dropbtn" href="{{ route('products') }}">Products</a></li>
+            <li><a class="dropbtn" href="{{ route('addproducts') }}">Upload new product</a></li>
+
           </ul>
         </div>
         <nav>
@@ -45,6 +48,8 @@
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('register') }}">Register</a>
                 <a href="{{ route('faqs') }}">FAQs</a>
+                <a href="{{ route('products') }}">Products</a>
+                <a href="{{ route('addproducts') }}">Upload your product</a>
               </div>
             </li>
           </ul>

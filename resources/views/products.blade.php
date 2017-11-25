@@ -1,14 +1,14 @@
 @extends('baseLayout')
 @section('content')
       <section>
-        <div class="container">
-          <div class="row">
-              @foreach ($products as $product)
-                  <div class="col-sm-6">
-                    <img class="img-thumbnail" src="{{ asset('storage/' . $products->product) }}"  alt="products">
-                  </div>
-              @endforeach
-          </div>
-        </div>
+        <article class="products">
+          <ul>
+            @foreach ($products as $product)
+              <li>{{$product->name}}</li>
+              <img src="{{ asset('storage/' . $product->imgpath) }}" alt="">
+              <a href="/product/{{$product->id}}">+Info</a>
+            @endforeach
+          </ul>
+        </article>
       </section>
     @endsection
