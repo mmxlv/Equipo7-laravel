@@ -5,7 +5,7 @@
           <ul>
             @foreach ($products as $product)
               <li>{{$product->name}}</li>
-              <img src="{{ asset('storage/' . $product->imgpath) }}" alt="">
+                <img src="{{ asset('storage/' . $product->imgpath) }}" alt="">
               <a href="/product/{{$product->id}}">+Info</a>
             @endforeach
           </ul>
