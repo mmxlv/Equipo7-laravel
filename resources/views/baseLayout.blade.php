@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/accordion.css">
-    <link rel="stylesheet" href="css/aio.css">
+    <link rel="stylesheet" href="http://localhost/css/reset.css">
+    <link rel="stylesheet" href="http://localhost/css/master.css">
+    <link rel="stylesheet" href="http://localhost/css/slider.css">
+    <link rel="stylesheet" href="http://localhost/css/accordion.css">
+    <link rel="stylesheet" href="http://localhost/css/aio.css">
     <script>
       function showDropdown(){
         document.getElementById("main-drop").style.display="block";
       }
     </script>
-    <script src="js/display.js"></script>
+    <script src="http://localhost/js/display.js"></script>
     <title>Home</title>
   </head>
   <body>
     <div class="container">
       <header class="main-head">
         <div class="logo">
-          <a href="/"><img src="images/logo.png" alt="Logo"></a>
+          <a href="/"><img src="http://localhost/images/logo.png" alt="Logo"></a>
         </div>
         <div>
           <!-- nav de escritorio //-->
@@ -58,8 +58,8 @@
         <div class="social-links">
           <nav>
             <ul>
-              <li><a href="#"><img src="images/img-facebook.png" alt="Facebook"></a></li>
-              <li><a href="#"><img src="images/img-instagram.png" alt="Twitter"></a></li>
+              <li><a href="#"><img src="http://localhost/images/img-facebook.png" alt="Facebook"></a></li>
+              <li><a href="#"><img src="http://localhost/images/img-instagram.png" alt="Twitter"></a></li>
             </ul>
           </nav>
         </div>
