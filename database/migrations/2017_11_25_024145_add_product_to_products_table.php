@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFotopathToProductsTable extends Migration
+class AddProductToProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddFotopathToProductsTable extends Migration
     public function up()
     {
       Schema::table('products', function (Blueprint $table) {
-        $table->string('fotopath')->nullable();
+        $table->string('product')->nullable();
 });
     }
 
@@ -26,7 +26,7 @@ class AddFotopathToProductsTable extends Migration
     public function down()
     {
       Schema::table('products', function (Blueprint $table) {
-        $table->dropColumn('fotopath');
+        $table->dropColumn('product');
 });
     }
 }
