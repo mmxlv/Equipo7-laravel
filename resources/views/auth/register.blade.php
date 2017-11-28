@@ -6,7 +6,7 @@
       {{ csrf_field() }}
       <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
         <label for="name">Nombre</label><br>
-        <input id="name" type="text" class="username" name="name" value="{{ old('name') }}" required autofocus>
+        <input id="name" type="text" class="username" name="name" value="{{ old('name') }}">
         @if ($errors->has('name'))
           <br><br>
           <span class="help-block">
@@ -44,4 +44,5 @@
       <input class="submit-register" type="submit" name="" value="Register">
     </form>
   </div>
+  <script src="{{ asset('js/register.js') }}" charset="utf-8"></script>
 @endsection
