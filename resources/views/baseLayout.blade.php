@@ -26,19 +26,15 @@
           <!-- nav de escritorio //-->
           <ul class="nav-bar-lg">
             <li><a class="dropbtn" href="/">Home</a></li>
+            <li><a class="dropbtn" href="{{ route('products') }}">Products</a></li>
             @if (!Auth::check())
               <li><a class="dropbtn" href="{{ route('login') }}">Login</a></li>
               <li><a class="dropbtn" href="{{ route('register') }}">Register</a></li>
-              <li><a class="dropbtn" href="{{ route('products') }}">Products</a></li>
             @else
               <li><a class="dropbtn" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
-              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                  {{ csrf_field() }}
-              </form>
               <li><a class="dropbtn" href="{{ route('addproducts') }}">Upload new product</a></li>
             @endif
             <li><a class="dropbtn" href="{{ route('faqs') }}">FAQs</a></li>
-
           </ul>
         </div>
         <nav>
@@ -48,15 +44,22 @@
               <button class="dropbtn" onclick="showDropdown()">MENU</button>
               <div id="main-drop" class="dropdown-content">
                 <a href="/">Home</a>
-                <a href="{{ route('login') }}">Login</a>
-                <a href="{{ route('register') }}">Register</a>
-                <a href="{{ route('faqs') }}">FAQs</a>
                 <a href="{{ route('products') }}">Products</a>
-                <a href="{{ route('addproducts') }}">Upload your product</a>
+                @if (!Auth::check())
+                  <a href="{{ route('login') }}">Login</a>
+                  <a href="{{ route('register') }}">Register</a>
+                @else
+                  <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+                  <a href="{{ route('addproducts') }}">Upload your product</a>
+                @endif
+                <a href="{{ route('faqs') }}">FAQs</a>
               </div>
             </li>
           </ul>
         </nav>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
       </header>
       <div>
         @yield('content')
