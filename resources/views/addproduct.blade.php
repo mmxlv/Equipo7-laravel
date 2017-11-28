@@ -1,9 +1,9 @@
 @extends('baseLayout')
 @section('content')
 <div class="" style='text-align:center'>
-  <form class="" action="{{ route('addproducts') }}" method="post" enctype="multipart/form-data">
+  <form class="add-product" action="{{ route('addproducts') }}" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
-    <div class="">
+    <div class="nombre-producto-nuevo">
       <label for="">
         <p>Nombre del Producto:</p>
         <input type="text" name="name" value="">
@@ -21,9 +21,9 @@
         <input type="file" name="imgpath" value="">
       </label>
     </div>
-    <div class="">
-      <input type="submit" name="" value="Enviar">
-      <input type="reset" name="" value="Cancelar">
+    <div class="botones">
+      <input class="enviar" type="submit" name="enviar" value="Enviar">
+      <input class="cancelar" type="reset" name="cancelar" value="Cancelar">
     </div>
   </form>
 </div>

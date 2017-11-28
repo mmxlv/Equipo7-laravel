@@ -4,14 +4,19 @@
         <article class="products">
           <ul>
             @foreach ($products as $product)
+            <div class="paquete-imagen">
               <li>{{$product->name}}</li>
-                <img src="{{ asset('storage/' . $product->imgpath) }}" alt="">
-              <a href="/product/{{$product->id}}">+Info</a>
+                <a href="/product/{{$product->id}}">info</a>
+                <div class="imagen">
+                    <img src="{{ asset('storage/' . $product->imgpath) }}" alt="">
+                </div>
+            </div>
             @endforeach
+
           </ul>
         </article>
         @if (count($products))
-          <div class="col-xs-12 row justify-content-start" style="text-align:center">
+          <div id="paginacion" class="col-xs-12 row justify-content-start" style="text-align:center">
             {{$products->links()}}
           </div>
         @endif

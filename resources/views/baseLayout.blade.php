@@ -33,6 +33,7 @@
             @else
               <li><a class="dropbtn" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
               <li><a class="dropbtn" href="{{ route('addproducts') }}">Upload new product</a></li>
+              <li><a class="dropbtn" href="{{ route('products') }}">Products</a></li>
             @endif
             <li><a class="dropbtn" href="{{ route('faqs') }}">FAQs</a></li>
           </ul>
