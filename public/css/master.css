@@ -44,12 +44,12 @@ html,body,ul,img,div{
   display: inline-block;
 }
 
-.temp{
+/*.temp{
   float: right;
   margin-right: 10px;
   margin-top: 15px;
   margin-left: 10px;
-}
+}*/
 
 .logo{
   clear: both;
@@ -68,7 +68,6 @@ html,body,ul,img,div{
 .nav-bar{
   margin: 0 auto;
   width: 160px;
-  /*background-color: #EAF2D0;*/
 }
 .dropbtn {
   width: 160px;
@@ -99,12 +98,6 @@ html,body,ul,img,div{
     text-decoration: none;
     display: block;
 }
-/*.dropdown-content a:hover {
-  background-color: #f1f1f1
-}
-.dropdown:hover .dropbtn {
-  background-color: #EAF2D0;
-}*/
 .banner{
   width: 95%;
   margin: auto;
@@ -120,11 +113,11 @@ article.products{
   margin: auto;
   overflow: hidden;
 }
-article.products img{
-  width: 100%;
-  float: left;
-  display: inline-block;
-  margin-bottom: 5px;
+.principales img{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	margin-bottom: 5px;
 }
 article.products-slider{
   width: 95%;
@@ -132,7 +125,6 @@ article.products-slider{
   margin: auto;
   margin-bottom: 5px;
 }
-
 .login-form-div, .refon{
   width: 70%;
   margin: 0 auto;
@@ -145,11 +137,9 @@ article.products-slider{
   text-align: center;
   font-family: avenir;
 }
-
 .login a{
 	margin: 10px 0 10px 0;
 }
-
  .email, .login-pass, .username, .register-pass, .cpassword{
 	border: 1px solid black;
 	width: 60%;
@@ -158,7 +148,6 @@ article.products-slider{
 .remember-box {
 	width: 3%;
 }
-
 .btnSubmit{
 	border: 0.8px solid black;
 	width:20%;
@@ -167,15 +156,12 @@ article.products-slider{
 	font-family: avenir;
 	margin-top: 5px;
 }
-
 .imgprofile{
 	border: 1px solid black;
 	width: 60%;
 	padding: 5px;
 	background-color: rgba(254, 249, 210, 0.89);
 }
-
-
 .submit-loggin, .submit-register{
 	border: 0.8px solid black;
 	width:20%;
@@ -183,7 +169,6 @@ article.products-slider{
 	font-size: 0.8em;
 	font-family: avenir;
 }
-
 .register-form-div{
   text-align: center;
   width: 70%;
@@ -200,7 +185,6 @@ article.products-slider{
 label, input{
   margin: 5px 0 5px 0;
 }
-
 .pagination {
 	display: inline-flex;
 	padding: 4px;
@@ -209,7 +193,6 @@ label, input{
 .pagination li {
 	padding: 8px;
 }
-
 .add-product{
 	text-align: center;
     width: 70%;
@@ -223,37 +206,29 @@ label, input{
     background-color: white;
     font-family: avenir;
 }
-
 .add-product input{
 	border: 1px solid black;
 	width: 60%;
 	padding: 10px;
 }
-
 .add-product .enviar{
 	border: 0.8px solid black;
 	width:20%;
 	background-color: rgba(204, 203, 198, 0.89);
 	font-size: 0.8em;
 }
-
 .add-product .cancelar{
 	border: 0.8px solid black;
 	width:20%;
 	font-size: 0.8em;
 }
-
-
 /*Productos*/
-
 .products{
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
 	margin-top: 40px;
 }
-
-
 .products .paquete-imagen{
 	display: inline-block;
 	overflow: hidden;
@@ -261,12 +236,10 @@ label, input{
 	width: 300px;
 	height: 300px;
 }
-
 .paquete-imagen li{
 	font-size: 1em;
 	padding: 5px;
 }
-
 .imagen{
 	margin: 0 auto;
 	width: 300px;
@@ -274,57 +247,43 @@ label, input{
 	margin-bottom: 30px;
 	padding: 5px 0px 5px 0px;
 }
-
 .products .img{
 	margin: 0 auto;
-
 }
-
-
 .products ul{
 	font-family: avenir;
 }
-
 #paginacion{
 	font-family: avenir;
 	color: black;
 }
-
-
-
-
+#paginacion a:visited{
+	color: black;
+}
 /*Producto específico*/
-
-
 .contenido-general{
 	margin-top: 60px;
 	overflow: hidden;
 	font-family: avenir;
 	text-align: center;
 }
-
 .datos-producto{
 	margin-bottom: 20px;
 }
-
 .datos-producto h1{
 	font-size: 1.2em;
 	text-decoration: underline;
 	line-height: 40px;
 }
-
 .imagen-producto img{
 	width: 70%;
 }
-
 .contenido-general .acciones .borrar{
 	border: 0.8px solid black;
-	width:20%;
+	border-radius: 5px;
 	font-size: 0.8em;
 	background-color: none;
-
 }
-
 .contenido-general .acciones .editar{
 	border: 0.8px solid black;
 	width:20%;
@@ -336,9 +295,6 @@ label, input{
 	text-decoration: none;
 	border-radius: 5px;
 }
-
-
-
 .producto-editando{
 	text-align: center;
     width: 70%;
@@ -351,15 +307,12 @@ label, input{
     border-radius: 5px;
     background-color: white;
     font-family: avenir;
-
 }
-
 .producto-editando input{
 	border: 1px solid black;
 	width: 60%;
 	padding: 10px;
 }
-
 .producto-editando .actualizar{
 	border: 0.8px solid black;
 	width:20%;
@@ -367,7 +320,6 @@ label, input{
 	font-size: 0.8em;
 	padding: 5px;
 }
-
 .producto-editando .cancelar-modificacion{
 	border: 0.8px solid black;
 	width:20%;
@@ -375,8 +327,6 @@ label, input{
 	font-size: 0.8em;
 	padding: 5px;
 }
-
-
 footer{
   background-color: white;
   height: 50px;
@@ -388,9 +338,6 @@ footer{
 .social-links li{
   float: left;
 }
-
-
-
 
 @media only screen and (min-width:768px) {
   .container{
@@ -404,7 +351,7 @@ footer{
   article.main-product img{
     height: 400px;
   }
-  article.products img{
+  .principales img{
     width: 50%;
     padding: 5px;
   }
@@ -423,13 +370,6 @@ footer{
   .imagen img{
 	  text-align: center;
   }
-
-
-
-
-
-
-
 
 }
 @media only screen and (min-width:992px) {

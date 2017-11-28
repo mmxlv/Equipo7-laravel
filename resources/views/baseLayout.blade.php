@@ -32,8 +32,7 @@
               <li><a class="dropbtn" href="{{ route('register') }}">Register</a></li>
             @else
               <li><a class="dropbtn" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
-              <li><a class="dropbtn" href="{{ route('addproducts') }}">Upload new product</a></li>
-              <li><a class="dropbtn" href="{{ route('products') }}">Products</a></li>
+              <li><a class="dropbtn" href="{{ route('addproducts') }}">Upload</a></li>
             @endif
             <li><a class="dropbtn" href="{{ route('faqs') }}">FAQs</a></li>
           </ul>
@@ -51,7 +50,7 @@
                   <a href="{{ route('register') }}">Register</a>
                 @else
                   <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
-                  <a href="{{ route('addproducts') }}">Upload your product</a>
+                  <a href="{{ route('addproducts') }}">Upload</a>
                 @endif
                 <a href="{{ route('faqs') }}">FAQs</a>
               </div>

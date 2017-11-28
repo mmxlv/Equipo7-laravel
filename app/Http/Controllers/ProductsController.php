@@ -9,8 +9,7 @@ class ProductsController extends Controller
 {
     public function show()
     {
-
-      $products = \App\Product::paginate(8);
+      $products = \App\Product::paginate(6);
       return view('products', [
         'products' => $products,
     ]);
