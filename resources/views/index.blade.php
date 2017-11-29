@@ -29,12 +29,9 @@
           </div>
         </article>
         <article class="products">
-          <img src="images/img1.jpg" alt="">
-          <img src="images/img2.jpg" alt="">
-          <img src="images/img3.jpg" alt="">
-          <img src="images/img4.jpg" alt="">
-          <img src="images/img5.jpg" alt="">
-          <img src="images/img6.jpg" alt="">
+          @foreach ($products as $product)
+            <div class="principales"><a href='/product/{{$product->id}}'><img src="{{ asset('storage/' . $product->imgpath) }}" alt=""></a></div>
+          @endforeach
         </article>
       </section>
       <script src="js/slider.js"></script>
