@@ -28,7 +28,7 @@ email.addEventListener('input', validarEmail);
 // VALIDAR Password
 var password = document.querySelector('#password');
 
-var passRegex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;// minimo 8 letras,
+var passRegex = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";// minimo 8 letras,
 //un simbolo obligatorio, una mayuscula, una minuscula y un numero
 
 var validarPass = function() {
