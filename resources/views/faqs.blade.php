@@ -2,25 +2,25 @@
 @section('content')
       <section>
         <section class="main-faqs">
-          <button class="accordion">Pregunta 1</button>
+          <button class="accordion">¿Qué tipo de muebles puedo vender?</button>
           <div class="panel-faqs">
-            <p>Respuesta 1<br><br><br></p>
+            <br><p>Cualquier mueble de hogar(sillones, sillas, estantes, escritorios, etc)<br><br><br></p>
           </div>
-          <button class="accordion">Pregunta 2</button>
+          <button class="accordion">¿Cómo se realizan los envios?</button>
           <div class="panel-faqs">
-            <p>Respuesta 2<br><br><br></p>
+            <br><p>Envios a todos el país a través de OCA y Correo Argentino<br><br><br></p>
           </div>
-          <button class="accordion">Pregunta 3</button>
+          <button class="accordion">¿Cómo puedo cambiar mi mueble ya comprado?</button>
           <div class="panel-faqs">
-            <p>Respuesta 3<br><br><br></p>
+            <br><p>Si el mueble no satiface tus necesidades, podes elegir cambiarlo por cualquier producto del mismo valor o superior<br><br><br></p>
           </div>
-          <button class="accordion">Pregunta 4</button>
+          <button class="accordion">¿Cómo califico a los otros usuarios?</button>
           <div class="panel-faqs">
-            <p>Respuesta 4<br><br><br></p>
+            <br><p>Según la cantidad de estrellas que decidas ponerle: Muy malo, Malo, Regular, Bueno, Excelente<br><br><br></p>
           </div>
-          <button class="accordion">Pregunta 5</button>
+          <button class="accordion">¿Qué es el servicio de venta VIP?</button>
           <div class="panel-faqs">
-            <p>Respuesta 5 <br><br><br></p>
+            <br><p>En el servicio de venta VIP, una vez aprobados tus muebles, armamos tu book de muebles personalizado y te ayudamos con las ventas<br><br><br></p>
           </div>
           <script src="./js/accordion.js"></script>
         </section>
