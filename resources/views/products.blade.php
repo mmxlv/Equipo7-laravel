@@ -8,7 +8,7 @@
               <li>{{$product->name}}</li>
                 <a href="/product/{{$product->id}}">info</a>
                 <div class="imagen">
-                    <img src="{{ asset('storage/' . $product->imgpath) }}" alt="">
+                <a href="/product/{{$product->id}}"><img src="{{ asset('storage/' . $product->imgpath) }}" alt=""></a>
                 </div>
             </div>
             @endforeach

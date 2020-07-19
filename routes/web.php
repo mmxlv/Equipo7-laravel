@@ -31,3 +31,7 @@ Route::patch('/product/{id}', 'ProductsController@update')->name('editproduct');
 Route::delete('/product/{id}', 'ProductsController@destroy')->name('deleteproducts');
 
 Route::get('/product/{id}', 'ProductsController@info')->name('productinfo');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
