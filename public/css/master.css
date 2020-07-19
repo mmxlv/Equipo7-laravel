@@ -163,8 +163,10 @@ article.products-slider{
 	background-color: rgba(254, 249, 210, 0.89);
 }
 .submit-loggin, .submit-register{
+  margin-top: 5px;
+  padding: 5px 0 5px 0;
 	border: 0.8px solid black;
-	width:20%;
+	width:15%;
 	background-color: rgba(204, 203, 198, 0.89);
 	font-size: 0.8em;
 	font-family: avenir;

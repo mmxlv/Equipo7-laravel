@@ -1,48 +1,55 @@
 @extends('baseLayout')
 
 @section('content')
-  <div class="register-form-div">
+<div class="register-form-div">
     <form class="register-form" method="POST" action="{{ route('register') }}">
-      {{ csrf_field() }}
-      <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-        <label for="name">Nombre</label><br>
-        <input id="name" type="text" class="username" name="name" value="{{ old('name') }}">
-        @if ($errors->has('name'))
-          <br><br>
-          <span class="help-block">
-            <strong>{{ $errors->first('name') }}</strong>
-          </span>
-          <br><br>
-        @endif
-      </div>
-      <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-        <label for="email">E-Mail Address</label><br>
-        <input id="email" type="email" class="email" name="email" value="{{ old('email') }}" required>
-        @if ($errors->has('email'))
-          <br><br>
-          <span class="help-block">
-            <strong>{{ $errors->first('email') }}</strong>
-          </span>
-          <br><br>
-        @endif
-      </div>
-      <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-        <label for="password">Password</label><br>
-        <input id="password" type="password" class="register-pass" name="password" required>
-        @if ($errors->has('password'))
-          <br><br>
-          <span class="help-block">
-            <strong>{{ $errors->first('password') }}</strong>
-          </span>
-          <br><br>
-        @endif
-      </div>
-      <div class="form-group">
-        <label for="password-confirm">Confirm Password</label><br>
-        <input id="password-confirm" type="password" class="cpassword" name="password_confirmation" required>
-      </div>
-      <input class="submit-register" type="submit" name="" value="Register">
-    </form>
-  </div>
-  <script src="{{ asset('js/register.js') }}" charset="utf-8"></script>
-  @endsection
+        @csrf
+
+        <div class="form-group row">
+            <label for="name">{{ __('Name') }}</label><br>              
+            <input id="name" type="text" class="username @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+            @error('name')
+                <br>
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                <br>
+            @enderror           
+        </div>
+
+        <div class="form-group">
+            <label for="email">{{ __('E-Mail Address') }}</label><br>
+            <input id="email" type="email" class="email @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+            @error('email')
+                <br>
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                <br>
+            @enderror
+        </div>
+
+        <div class="form-group row">
+            <label for="password">{{ __('Password') }}</label><br>
+            <input id="password" type="password" class="register-pass @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+            @error('password')
+                <br>
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                <br>
+            @enderror
+        </div>
+
+        <div class="form-group row">
+            <label for="password-confirm">{{ __('Confirm Password') }}</label><br>
+            <input id="password-confirm" type="password" class="cpassword form-control" name="password_confirmation" required autocomplete="new-password">
+        </div>
+        
+        <button type="submit" class="submit-register">
+            {{ __('Register') }}
+        </button>
+
+    </form>     
+</div>
+@endsection
